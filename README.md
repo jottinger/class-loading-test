@@ -7,3 +7,7 @@ It turns out that the class in WEB-INF/classes is loaded in "Apache Tomcat 8.0.1
 "The Web application class loader must load classes from the WEB-INF/classes directory first, and then from library JARs in the WEB-INF/lib directory"
 
 However, it would be interesting to see how this is implemented in various other Containers. You're most welcome to test this out and update this README.
+
+Once you build the application using Maven, you can test it with the URL http://<ip-address>:<port-number>/classloading-test/
+
+I result I got is "MyClass in WEB-INF/classes loaded. MyClass in WEB-INF/classes instantiated."
