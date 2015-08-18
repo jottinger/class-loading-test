@@ -10,4 +10,6 @@ However, it would be interesting to see how this is implemented in various other
 
 Once you build the application using Maven, you can test it with the URL http://ip-address:port-number/classloading-test/
 
+This sample test app has two classes both named MyClass and the package name being org.asgs.test.classloading. But one is packaged as a JAR inside the WAR's WEB-INF/lib directory and the other is under the WEB-INF/classes (with the appropriate directory structure corresponding to the package name). A Simple Servlet is exposed that will listen to all incoming requests with any URI (/*). It emits a string back to the response. What it sends is what we're interested in. It says the MyClass was either loaded from the WEB-INF/lib directory or from the WEB-INF/classes directory.
+
 I result I got is "MyClass in WEB-INF/classes loaded. MyClass in WEB-INF/classes instantiated."
