@@ -10,6 +10,7 @@
     <name>classloading-container</name>
     <modules>
         <module>class-loading-jar</module>
+        <module>class-loading-jar-fix</module>
         <module>class-loading-war</module>
     </modules>
     <dependencyManagement>
