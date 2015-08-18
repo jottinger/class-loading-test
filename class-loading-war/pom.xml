@@ -1,21 +1,33 @@
 <project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.test.classloading</groupId>
-	<artifactId>class-loading-war</artifactId>
-	<packaging>war</packaging>
-	<name>class-loading-war</name>
-	<version>1.0-SNAPSHOT</version>
-	<build>
-		<finalName>classloading-test</finalName>
-	</build>
-	<dependencies>
-		<dependency>
-			<groupId>org.test.classloading</groupId>
-			<artifactId>class-loading-jar</artifactId>
-			<type>jar</type>
-			<version>1.0-SNAPSHOT</version>	
-		</dependency>
-	</dependencies>	
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.test.classloading</groupId>
+    <artifactId>class-loading-war</artifactId>
+    <parent>
+        <groupId>org.asgs.test</groupId>
+        <artifactId>classloading</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <packaging>war</packaging>
+    <name>class-loading-war</name>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <finalName>classloading-test</finalName>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.asgs.test</groupId>
+            <artifactId>class-loading-jar</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.arquillian.junit</groupId>
+            <artifactId>arquillian-junit-container</artifactId>
+        </dependency>
+    </dependencies>
 </project>
